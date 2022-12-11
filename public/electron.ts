@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import * as path from 'path';
 import { app, BrowserWindow } from 'electron';
 import * as isDev from 'electron-is-dev';
