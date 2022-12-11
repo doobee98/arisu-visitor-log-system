@@ -24,3 +24,4 @@ yarn-error.log*
 
 # electron compile & build files
 /public/electron.js
+/dist

@@ -60,5 +60,52 @@
     "electron": "^22.0.0",
     "electron-builder": "^23.6.0",
     "wait-on": "^6.0.1"
+  },
+  "build": {
+    "productName": "arisu-visitor-log-system",
+    "appId": "com.electron.arisu-visitor-log-system",
+    "asar": true,
+    "protocols": {
+      "name": "arisu-visitor-log-system",
+      "schemes": [
+        "arisu-visitor-log-system"
+      ]
+    },
+    "mac": {
+      "target": [
+        "default"
+      ]
+    },
+    "dmg": {
+      "title": "아리수 출입자기록부"
+    },
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm",
+        "zip",
+        "tar.gz"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": false,
+      "installerLanguages": [
+        "en_US",
+        "ko_KR"
+      ],
+      "language": "1042"
+    },
+    "directories": {
+      "output": "dist/",
+      "app": "."
+    }
   }
 }
